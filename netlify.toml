@@ -1,0 +1,16 @@
+[build]
+  # If you have a build step, set the command and publish dir here.
+  # For a plain HTML site with no build tool, these defaults work fine:
+  # command = ""
+  # publish = "."
+
+[template.environment]
+  GA4_MEASUREMENT_ID = "Your GA4 Measurement ID e.g. G-XXXXXXXXXX"
+  UA_TRACKING_ID     = "Your UA Tracking ID e.g. UA-XXXXXXXX-X"
+
+# Enable Netlify's built-in environment variable substitution in HTML files
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
